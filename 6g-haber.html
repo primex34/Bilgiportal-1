@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6G Teknolojisi - Haber</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .navbar {
+    background-color: #004d40;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.haberler {
+    width: 90%;
+    margin: auto;
+    padding: 80px 20px 20px; /* Navbar'ın altında içerik görünmesi için padding-top ekledik */
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            background-color: #004d40;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #ff9800;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 10px 15px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #ff9800;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .haber-container {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .haber-container img {
+            width: 50%;  /* RESMİ KÜÇÜK YAPAN KOD */
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+
+        .haber-container h1 {
+            color: #004d40;
+            font-size: 28px;
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .haber-container p {
+            font-size: 18px;
+            text-align: justify;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .back-link a {
+            text-decoration: none;
+            color: #ff9800;
+            font-weight: bold;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="#">Teknoloji</a></li>
+            <li><a href="#">Haberler</a></li>
+            <li><a href="#">Hakkında</a></li>
+            <li><a href="#">Abone Ol</a></li>
+        </ul>
+    </nav>
+
+    <!-- Haber İçeriği -->
+    <div class="haber-container">
+        <img src="6g.jpg" alt="6G Teknolojisi">
+        <h1>Akıllı Telefonlarda 6G Devri Başlıyor! İşte Kritik Açıklamalar</h1>
+        <p>
+            Günümüzde 5G teknolojisi dünya genelinde yaygınlaşmaya devam ederken, bir sonraki büyük adım olan <strong>6G</strong> hakkında heyecan verici gelişmeler yaşanıyor. 
+            6G teknolojisi, mobil iletişimde devrim niteliğinde yenilikler vaat ediyor ve birçok ülke, teknoloji şirketi ve araştırma laboratuvarı bu yeni nesil kablosuz ağ üzerine çalışmalarını hızlandırmış durumda.
+        </p>
+
+        <h2>6G Nedir? 5G’den Farkı Ne Olacak?</h2>
+        <p>
+            6G, beşinci nesil (5G) kablosuz ağların daha gelişmiş bir versiyonu olarak düşünülebilir, ancak yalnızca hız artışıyla sınırlı değil.
+            6G, <strong>terahertz (THz) bandına</strong> taşıyarak bugünkü en hızlı bağlantılardan bile <strong>100 kata kadar daha hızlı</strong> bir deneyim sunmayı hedefliyor.
+        </p>
+
+        <h2>6G Ne Zaman Kullanıma Sunulacak?</h2>
+        <p>
+            6G'nin ticari olarak kullanılmaya başlanması <strong>2030 yılı civarında</strong> bekleniyor. Şu an için teknoloji devleri ve üniversiteler, <em>araştırma-geliştirme</em> aşamasında bulunuyor. 
+            Samsung, Huawei, Apple, Nokia ve Qualcomm gibi büyük şirketler, 6G için altyapı çalışmalarını sürdürüyor.
+        </p>
+
+        <h2>6G’nin Getireceği Büyük Yenilikler</h2>
+        <ul>
+            <li><strong>Terahertz (THz) Frekansları:</strong> 100 kat daha hızlı internet!</li>
+            <li><strong>Holografik Görüntüleme:</strong> Gerçek zamanlı holografik görüşmeler!</li>
+            <li><strong>Yapay Zeka Destekli Ağlar:</strong> Daha akıllı ve kendini optimize eden internet bağlantısı.</li>
+            <li><strong>Küresel İnternet:</strong> 6G, dünya çapında <em>uydu bazlı internet</em> sağlayacak.</li>
+        </ul>
+
+        <h2>6G Teknolojisine Yatırım Yapan Şirketler</h2>
+        <table border="1" width="100%" cellpadding="10" style="text-align:center;">
+            <tr style="background-color:#004d40; color:white;">
+                <th>Şirket</th>
+                <th>6G Çalışmaları</th>
+            </tr>
+            <tr>
+                <td>Samsung</td>
+                <td>2030 yılına kadar 6G teknolojisini geliştirmeyi hedefliyor.</td>
+            </tr>
+            <tr>
+                <td>Huawei</td>
+                <td>Çin hükümetiyle 6G altyapısı için büyük yatırımlar yapıyor.</td>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>6G destekli çipler üzerinde Ar-Ge çalışmaları yürütüyor.</td>
+            </tr>
+            <tr>
+                <td>SpaceX</td>
+                <td>Uydu bazlı 6G internet sistemleri için testler yapıyor.</td>
+            </tr>
+        </table>
+
+        <h2>Sonuç: 6G’ye Hazır Olun!</h2>
+        <p>
+            Teknoloji dünyasında <strong>6G devri, 2030’lu yıllarda başlayacak</strong> ve iletişim dünyasında devrim yaratacak.
+            Ultra hızlı internet, <strong>yapay zeka entegrasyonu, gerçek zamanlı hologramlar, küresel uydu bağlantıları</strong> ve daha fazlası bizleri bekliyor.
+            Hazır olun, <em>kablosuz iletişimin geleceği geliyor!</em> 🚀📶
+        </p>
+
+        <!-- Geri Dönüş Linki -->
+        <div class="back-link">
+            <a href="index.html">← Ana Sayfaya Geri Dön</a>
+        </div>
+    </div>
+
+</body>
+</html>

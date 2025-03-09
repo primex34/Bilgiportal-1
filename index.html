@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknoloji Haberleri</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            background-color: #004d40;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #ff9800;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 10px 15px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #ff9800;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .haberler {
+            width: 90%;
+            margin: auto;
+            padding: 80px 20px 20px; /* Navbar'ın altında içerik görünmesi için padding-top ekledik */
+        }
+
+        .haber-kutulari {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .haber {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            flex: 1 1 calc(25% - 15px);
+            box-sizing: border-box;
+        }
+
+        .haber img {
+            width: 100%;
+            height: 150px;
+            border-radius: 5px;
+        }
+
+        .haber p {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .haber a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .haber:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .TechNext {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #004d40;
+            margin-bottom: 20px;
+        }
+
+        .buyuk-haber {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            margin-top: 30px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .buyuk-haber a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .buyuk-haber img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .buyuk-haber h2 {
+            margin-top: 15px;
+            font-size: 22px;
+            color: #004d40;
+        }
+
+        .buyuk-haber p {
+            font-size: 16px;
+            color: #333;
+            text-align: justify;
+            padding: 0 15px;
+        }
+
+        .buyuk-haber:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Teknoloji</a></li>
+            <li><a href="#">Haberler</a></li>
+            <li><a href="#">Hakkında</a></li>
+            <li><a href="#">Abone Ol</a></li>
+        </ul>
+    </nav>
+
+    <div class="haberler">
+        <div class="TechNext">NextTech</div>
+
+        <div class="haber-kutulari">
+            <div class="haber">
+                <a href="iphone16-haber.html">
+                    <img src="iphone16.jpg" alt="iPhone 16">
+                    <p>iPhone 16: Apple'ın Yeni Devrimi Hakkında Bilmeniz Gereken Her Şey</p>
+                </a>
+            </div>
+            <div class="haber">
+                <a href="iphone17-haber.html">
+                    <img src="iphone17.jpg" alt="iPhone 17">
+                    <p>iPhone 17 Beklenen Özellikler</p>
+                </a>
+            </div>
+            <div class="haber">
+                <a href="meta-aria-haber.html">
+                    <img src="metaaria.png" alt="Meta Aria Gen 2">
+                    <p>Yapay zeka gözünüze geliyor! Meta Aria Gen 2 tanıtıldı</p>
+                </a>
+            </div>
+            <div class="haber">
+                <a href="deepseek-haber.html">
+                    <img src="deepseek.jpg" alt="DeepSeek">
+                    <p>DeepSeek popülerliği neden düştü</p>
+                </a>
+            </div>
+            <div class="haber">
+                <a href="tesla-modelx-2025.html">
+                    <img src="teslax.jpg" alt="Tesla Model X 2025">
+                    <p>Tesla Model X 2025: Elektrikli Araçlarda Yeni Dönem</p>
+                </a>
+            </div>
+            <div class="haber">
+                <a href="samsung-zfold6.html">
+                    <img src="galaxyzfold6.jpg" alt="Samsung Galaxy Z Fold 6">
+                    <p>Samsung Galaxy Z Fold 6: Katlanabilir Telefonların Geleceği</p>
+                </a>
+            </div>
+            <div class="haber">
+                <a href="chatgpt5-haber.html">
+                    <img src="chatgpt5.jpg" alt="ChatGPT 5.0">
+                    <p>ChatGPT 5.0: Yapay Zeka Artık İnsan Gibi mi Konuşacak?</p>
+                </a>
+            </div>
+            <div class="haber">
+                <a href="gta6-haber.html">
+                    <img src="gta6.jpg" alt="GTA 6">
+                    <p>GTA 6: Çıkış Tarihi ve Bilinen Özellikler</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="buyuk-haber">
+            <a href="6g-haber.html">
+                <img src="6g.jpg" alt="6G Teknolojisi">
+                <h2>Akıllı Telefonlarda 6G Devri Başlıyor! İşte Kritik Açıklamalar</h2>
+                <p>Mobil iletişimde yeni bir çağ başlıyor! 5G teknolojisi henüz tüm dünyada tam olarak kullanılmazken, 6G teknolojisinin temelleri atılmaya başlandı. 
+                6G ile internet hızları 100 katına çıkacak, gecikme süreleri neredeyse sıfıra inecek ve holografik iletişim günlük hayatın bir parçası olacak. 
+                Uzmanlar, bu teknolojinin 2030'lu yıllarda kullanıma sunulacağını belirtiyor. Devamı için tıklayın...</p>
+            </a>
+        </div>
+        <div class="haber-kutulari" style="display: flex; gap: 15px; justify-content: center; margin-top: 20px;">
+            <div class="buyuk-haber" style="width: 45%;">
+                <a href="micromac.html">
+                    <img src="copilot.jpg" alt="">
+                    <h2>Microsoft Copilot, Mac Kullanıcılarına Sunuldu! Yapay Zeka Destekli Asistan Artık macOS’ta</h2>
+                    <p>Teknoloji dünyasında büyük yankı uyandıran Microsoft Copilot, artık Mac kullanıcılarının da hizmetine sunuldu!.</p>
+                </a>
+            </div>
+            <div class="buyuk-haber" style="width: 48%;">
+                <a href="amdfsr4.html">
+                    <img src="amdfsr4.jpg" alt="AMD FSR 4 destekleyecek oyunlar ortaya çıktı!">
+                    <h2>AMD FSR 4 destekleyecek oyunlar ortaya çıktı!</h2>
+                    <p>AMD, yeni nesil Radeon RX 9070 serisi ekran kartlarını tanıtmışken, en çok 
+                        merak edilen özelliklerden biri olan FSR 4 teknolojisinin 
+                        detayları da sızdırıldı.</p>
+                </a>
+            </div>
+        </div>
+        
+        
+            
+                </div>
+             
+    </div>
+    <div class="haber-kutulari">
+        <div class="haber">
+            <a href="intel14.html">
+                <img src="intel14.jpg" alt="Intel 14. Nesil İşlemciler">
+                <p>Intel 14. Nesil İşlemciler: Performans Canavarı mı?</p>
+            </a>
+        </div>
+        <div class="haber">
+            <a href="playstation6.html">
+                <img src="ps6.png" alt="PlayStation 6">
+                <p>PlayStation 6 Hakkında İlk Bilgiler Geldi!</p>
+            </a>
+        </div>
+        <div class="haber">
+            <a href="nvidia5000.html">
+                <img src="rtx5000.png" alt="Nvidia RTX 5000 Serisi">
+                <p>Nvidia RTX 5000 Serisi: Grafik Kartlarında Yeni Dönem</p>
+            </a>
+        </div>
+        <div class="haber">
+            <a href="elonmars.html">
+                <img src="mars.png" alt="Elon Musk ve Mars Görevi">
+                <p>Elon Musk: "Mars'a İlk İnsan Göndermek Üzereyiz!"</p>
+            </a>
+        </div>
+    </div>
+    <div class="haber-container">
+        <!-- Sol Küçük Slider -->
+        <div class="slider" id="sol-slider">
+            <div class="slides">
+                <a href="ramazan-spor.html" class="slide">
+                    <img src="resim1.jpg" alt="">
+                    <p>Ramazanda spor yapılır mı?</p>
+                </a>
+                <a href="saglik-trendleri.html" class="slide">
+                    <img src="resim2.jpg" alt="">
+                    <p>Yeni sağlık trendleri neler?</p>
+                </a>
+                <a href="uzman-gorusleri.html" class="slide">
+                    <img src="resim3.jpg" alt="">
+                    <p>Uzmanlardan önemli açıklamalar</p>
+                </a>
+            </div>
+            <div class="slider-buttons">
+                <button class="prev" onclick="prevSlide('sol-slider')">❮</button>
+                <button class="next" onclick="nextSlide('sol-slider')">❯</button>
+            </div>
+        </div>
+
+        <!-- Orta Büyük Slider -->
+        <div class="slider big-slider" id="orta-slider">
+            <div class="slides">
+                <a href="grok3.html" class="slide">
+                    <img src="grok3.jpg" alt="">
+                    <p>Elon Musk’ın Yapay Zeka Devrimi: Grok 3 Geliyor!</p>
+                </a>
+                <a href="instareels.html" class="slide">
+                    <img src="insta.jpg" alt="">
+                    <p>Instagram Reels ayrı uygulamaya taşınıyor!</p>
+                </a>
+                <a href="yapakzekag.html" class="slide">
+                    <img src="1000yılsonra.jpg" alt="">
+                    <p>Yapay Zeka Geleceği Resmetti: 1000 Yıl Sonra İnsanlar Neye Benzeyecek?</p>
+                </a>
+                <a href="yapay-zeka.html" class="slide">
+                    <img src="resim7.jpg" alt="">
+                    <p>Yapay zeka sektörü değiştirecek!</p>
+                </a>
+                <a href="telefon-tanitildi.html" class="slide">
+                    <img src="resim8.jpg" alt="">
+                    <p>Yeni nesil telefonlar tanıtıldı</p>
+                </a>
+                <a href="ucan-arabalar.html" class="slide">
+                    <img src="resim9.jpg" alt="">
+                    <p>Uçan arabalar gerçek mi oluyor?</p>
+                </a>
+            </div>
+            <div class="slider-buttons">
+                <button class="prev" onclick="prevSlide('orta-slider')">❮</button>
+                <button class="next" onclick="nextSlide('orta-slider')">❯</button>
+            </div>
+        </div>
+
+        <!-- Sağ Sabit Haber Kutuları -->
+        <div class="sabit-haberler">
+            <a href="kizim-yanlis.html" class="haber-kutusu">
+                <img src="resim10.jpg" alt="">
+                <p>"Kızımın yaptığı yanlış"</p>
+            </a>
+            <a href="polis-kaza.html" class="haber-kutusu">
+                <img src="resim11.jpg" alt="">
+                <p>Polisten kaçarken kaza yaptı</p>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+   <script>
+    function nextSlide(sliderId) {
+        let slider = document.getElementById(sliderId);
+        let slides = slider.querySelector(".slides");
+        let slideWidth = slider.querySelector(".slide").offsetWidth;
+        slides.style.transform = `translateX(-${slideWidth}px)`;
+        slides.appendChild(slides.firstElementChild);
+        slides.style.transition = "none";
+        setTimeout(() => {
+            slides.style.transform = "translateX(0)";
+            slides.style.transition = "transform 0.5s ease-in-out";
+        }, 50);
+    }
+    
+    function prevSlide(sliderId) {
+        let slider = document.getElementById(sliderId);
+        let slides = slider.querySelector(".slides");
+        let slideWidth = slider.querySelector(".slide").offsetWidth;
+        slides.style.transform = `translateX(${slideWidth}px)`;
+        slides.insertBefore(slides.lastElementChild, slides.firstElementChild);
+        slides.style.transition = "none";
+        setTimeout(() => {
+            slides.style.transform = "translateX(0)";
+            slides.style.transition = "transform 0.5s ease-in-out";
+        }, 50);
+    }
+    </script>
+   
+    
+</body>
+</html>
